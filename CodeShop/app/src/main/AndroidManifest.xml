@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pankaj.codeshop">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/agamya"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name=".Home"
+            android:label="Exit" />
+        <activity android:name=".List" />
+        <activity android:name=".Page" />
+        <activity
+            android:name=".Category"
+            android:label="Category" />
+        <activity
+            android:name=".Help"
+            android:label="Help" />
+        <activity
+            android:name=".InternetError"
+            android:label="Internet Error" />
+        <activity android:name=".Save_List" />
+        <activity android:name=".SavePage" />
+        <activity
+            android:name=".AboutUs"
+            android:label="About Us" />
+        <activity android:name=".ChordLib"></activity>
+    </application>
+
+</manifest>
